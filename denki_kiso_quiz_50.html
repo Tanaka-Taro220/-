@@ -1,0 +1,2722 @@
+<!DOCTYPE html>
+<html lang="ja"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwNTA1NzgwMjUyMzEyMjkzMDc3NyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJhNThmMWI3MTNkODgtZGVua2lfa2lzb19xdWl6XzUwLmh0bWwtNjE3In0sImV4cCI6MTc5NDkyNjUxNSwiaWF0IjoxNzk0OTIyOTE1LCJhbGciOiJSUzI1NiJ9.LmAzXFDUJB6TW6AKZBiY5wpiH8LKHQIsG0FiCQDrIj6M9tfX413v9idyd4gNNt-XjoA40UvnIwyZvp9qAS1_T2LsBBpGXwshm0m_wUI-FTQicKA8fiDC7w2IsD0TCIvPGtQgXdAnrppoxSioRkOExFRqPfsQylT_7lHm6fcg0FyNwJnBiYhA1Jg81ZAcIgbiUB-nnXKWociGpQjsqP1O1hXSnf_JJq8ZSIZH9_JmyCWGyWbCUZivxxlRyrU9BJLRFuWwjzhSS00wSlgfr_qVegySppd1-Wk5m5zY7ZN3G_mHWZ2Ciq1fcHiLiifi2tKfwsxqnJm-FgQUUKZr2DwBKA","a58f1b713d88-denki_kiso_quiz_50.html-617")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電気基礎 第2節「電力と熱」全50問マスター学習アプリ</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans JP"', '"Inter"', 'sans-serif'],
+            mono: ['"Inter"', 'monospace']
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* カスタムスクロールバーと赤シート用スタイル */
+    body {
+      background-color: #f1f5f9;
+      color: #1e293b;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .red-sheet-word {
+      display: inline-block;
+      padding: 0.1rem 0.45rem;
+      margin: 0 0.15rem;
+      border-radius: 0.375rem;
+      font-weight: 700;
+      color: #dc2626;
+      background-color: #fef2f2;
+      border-bottom: 2px solid #ef4444;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .red-sheet-active .red-sheet-word.masked {
+      background-color: #dc2626;
+      color: #dc2626;
+      border-bottom-color: #991b1b;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    .red-sheet-active .red-sheet-word.masked:hover {
+      background-color: #b91c1c;
+      color: #b91c1c;
+    }
+    .option-btn {
+      transition: transform 0.1s ease, background-color 0.15s ease, border-color 0.15s ease;
+    }
+    .option-btn:active:not(:disabled) {
+      transform: scale(0.99);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.25s ease-out forwards;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Noto Sans JP", "Inter", sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:"Inter", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.sticky{position:sticky}.inset-0{inset:0px}.top-0{top:0px}.top-\[68px\]{top:68px}.z-20{z-index:20}.z-30{z-index:30}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-1\.5{margin-top:0.375rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-16{height:4rem}.h-2\.5{height:0.625rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-16{width:4rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-2\.5{gap:0.625rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.whitespace-pre-line{white-space:pre-line}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-emerald-100{--tw-border-opacity:1;border-color:rgb(209 250 229 / var(--tw-border-opacity, 1))}.border-rose-100{--tw-border-opacity:1;border-color:rgb(255 228 230 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-50\/70{background-color:rgb(239 246 255 / 0.7)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-50\/70{background-color:rgb(236 253 245 / 0.7)}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-rose-50\/70{background-color:rgb(255 241 242 / 0.7)}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-800\/80{background-color:rgb(30 41 59 / 0.8)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-blue-50\/80{background-color:rgb(239 246 255 / 0.8)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-rose-50{--tw-gradient-from:#fff1f2 var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 241 242 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-blue-950{--tw-gradient-to:rgb(23 37 84 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #172554 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-orange-50{--tw-gradient-to:#fff7ed var(--tw-gradient-to-position)}.to-slate-900{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-1\.5{padding-bottom:0.375rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-80{opacity:0.8}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.last\:border-none:last-child{border-style:none}.hover\:border-blue-500:hover{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.hover\:bg-amber-600:hover{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-50\/50:hover{background-color:rgb(239 246 255 / 0.5)}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-700:hover{--tw-bg-opacity:1;background-color:rgb(190 18 60 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-900:hover{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.hover\:text-slate-800:hover{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:bg-slate-300:disabled{--tw-bg-opacity:1;background-color:rgb(203 213 225 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-7{padding:1.75rem}.sm\:p-8{padding:2rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- ヘッダー -->
+  <header class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white shadow-lg sticky top-0 z-30">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3 cursor-pointer" onclick="goHome()">
+        <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-900 flex items-center justify-center font-black text-xl shadow">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div>
+          <p class="text-[11px] font-bold tracking-wider text-amber-300 uppercase">工業高校 電気基礎 第2章 第2節 (p.48〜57)</p>
+          <h1 class="text-base sm:text-lg font-extrabold leading-tight">電力と熱・赤線＆重要公式50問</h1>
+        </div>
+      </div>
+
+      <!-- ナビゲーション切り替えタブ -->
+      <nav class="flex bg-slate-800/80 p-1 rounded-xl border border-slate-700">
+        <button id="nav-quiz-btn" onclick="switchTab('quiz')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold bg-blue-600 text-white shadow transition">
+          <i class="fa-solid fa-pen-to-square mr-1"></i>クイズ演習
+        </button>
+        <button id="nav-sheet-btn" onclick="switchTab('sheet')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold text-slate-300 hover:text-white transition">
+          <i class="fa-solid fa-book-open mr-1"></i>赤シート暗記
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メインコンテンツエリア -->
+  <main class="flex-1 max-w-4xl w-full mx-auto px-4 py-6">
+
+    <!-- ==================== クイズ演習ビュー ==================== -->
+    <div id="view-quiz">
+
+      <!-- 1. ホーム（モード選択画面） -->
+      <section id="quiz-home" class="space-y-6 animate-fade-in">
+        <!-- 学習ステータスカード -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
+          <div class="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <h2 class="text-lg font-extrabold text-slate-800 flex items-center gap-2">
+                <i class="fa-solid fa-chart-line text-blue-600"></i> あなたの学習状況
+              </h2>
+              <p class="text-xs text-slate-500 mt-0.5">教科書の赤線・太字・例題・問から厳選した全50問を完全収録</p>
+            </div>
+            <button onclick="resetProgress()" class="text-xs text-slate-400 hover:text-red-500 underline transition">
+              履歴をリセット
+            </button>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3 mt-4">
+            <div class="bg-blue-50/70 border border-blue-100 rounded-xl p-3 text-center">
+              <div class="text-xs font-bold text-blue-600">クリア済</div>
+              <div class="text-xl sm:text-2xl font-black text-slate-800 mt-0.5">
+                <span id="stat-cleared">0</span><span class="text-xs font-semibold text-slate-500"> / 50問</span>
+              </div>
+            </div>
+            <div class="bg-emerald-50/70 border border-emerald-100 rounded-xl p-3 text-center">
+              <div class="text-xs font-bold text-emerald-600">達成率</div>
+              <div class="text-xl sm:text-2xl font-black text-slate-800 mt-0.5">
+                <span id="stat-rate">0</span><span class="text-xs font-semibold text-slate-500">%</span>
+              </div>
+            </div>
+            <div class="bg-rose-50/70 border border-rose-100 rounded-xl p-3 text-center">
+              <div class="text-xs font-bold text-rose-600">要復習（誤答）</div>
+              <div class="text-xl sm:text-2xl font-black text-rose-600 mt-0.5">
+                <span id="stat-wrong">0</span><span class="text-xs font-semibold text-slate-500">問</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- オフライン保存用ダウンロードバー -->
+          <div class="mt-4 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div class="text-xs text-slate-600">
+              <span class="font-bold text-slate-800"><i class="fa-solid fa-mobile-screen-button text-blue-600 mr-1"></i>スマホ・PCに保存して使う：</span>
+              HTMLファイルを保存すると、ネット環境なしでもブラウザでいつでも開けます。
+            </div>
+            <button onclick="downloadStandaloneHtml()" class="w-full sm:w-auto shrink-0 py-2 px-3.5 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold rounded-xl shadow-xs transition flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-download"></i> アプリをHTML保存
+            </button>
+          </div>
+        </div>
+
+        <!-- 出題モード選択 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- 順番に出題 -->
+          <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 flex flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold mb-2">
+                <i class="fa-solid fa-list-ol"></i> 基礎から網羅
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-800">全50問 順番に出題</h3>
+              <p class="text-sm text-slate-600 mt-1">教科書のページ順（p.48〜p.57）に沿って、1問目から50問目まで体系的に学習します。</p>
+            </div>
+            <button onclick="startQuiz('sequential')" class="mt-4 w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-play"></i> 1問目からスタート
+            </button>
+          </div>
+
+          <!-- ランダム出題 -->
+          <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 flex flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-2">
+                <i class="fa-solid fa-shuffle"></i> 実力テスト形式
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-800">ランダム出題</h3>
+              <p class="text-sm text-slate-600 mt-1">全50問の中からランダムに出題します。スキマ時間のテスト対策に最適です。</p>
+            </div>
+            <div class="mt-4 grid grid-cols-3 gap-2">
+              <button onclick="startQuiz('random', 10)" class="py-2.5 px-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow text-sm transition">
+                10問
+              </button>
+              <button onclick="startQuiz('random', 20)" class="py-2.5 px-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow text-sm transition">
+                20問
+              </button>
+              <button onclick="startQuiz('random', 50)" class="py-2.5 px-2 bg-slate-800 hover:bg-slate-900 text-white font-bold rounded-xl shadow text-sm transition">
+                全50問
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 間違えた問題だけ復習モード -->
+        <div class="bg-gradient-to-r from-rose-50 to-orange-50 rounded-2xl p-5 shadow-sm border border-rose-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-600 text-white text-xs font-bold mb-1.5">
+              <i class="fa-solid fa-rotate-right"></i> 弱点克服
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-800">間違えた問題だけ復習モード</h3>
+            <p class="text-sm text-slate-600 mt-0.5">過去に不正解だった問題だけを集中して解き直します（正解するとリストから解除されます）。</p>
+          </div>
+          <button id="btn-review-mode" onclick="startQuiz('review')" class="w-full sm:w-auto shrink-0 py-3 px-5 bg-rose-600 hover:bg-rose-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-bold rounded-xl shadow transition" disabled="">
+            復習を開始 (<span id="review-btn-count">0</span>問)
+          </button>
+        </div>
+
+        <!-- 単元別に出題 -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
+          <h3 class="text-base font-extrabold text-slate-800 mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-layer-group text-indigo-600"></i> 単元別に出題（各10問）
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <button onclick="startQuiz('unit', 1)" class="text-left p-3.5 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 transition group">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">単元 1（p.48〜49）</span>
+                <span class="text-xs font-semibold text-slate-400 group-hover:text-blue-600">10問 <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+              <div class="font-bold text-slate-800 mt-1">電流の発熱作用・ジュール熱・比熱</div>
+            </button>
+
+            <button onclick="startQuiz('unit', 2)" class="text-left p-3.5 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 transition group">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">単元 2（p.50〜51）</span>
+                <span class="text-xs font-semibold text-slate-400 group-hover:text-blue-600">10問 <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+              <div class="font-bold text-slate-800 mt-1">電力と電力量</div>
+            </button>
+
+            <button onclick="startQuiz('unit', 3)" class="text-left p-3.5 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 transition group">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">単元 3（p.52〜53）</span>
+                <span class="text-xs font-semibold text-slate-400 group-hover:text-blue-600">10問 <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+              <div class="font-bold text-slate-800 mt-1">温度上昇と許容電流</div>
+            </button>
+
+            <button onclick="startQuiz('unit', 4)" class="text-left p-3.5 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 transition group">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">単元 4（p.54〜55）</span>
+                <span class="text-xs font-semibold text-slate-400 group-hover:text-blue-600">10問 <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+              <div class="font-bold text-slate-800 mt-1">電気回路の安全</div>
+            </button>
+
+            <button onclick="startQuiz('unit', 5)" class="text-left p-3.5 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 transition group sm:col-span-2 lg:col-span-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-600">単元 5（p.56〜57）</span>
+                <span class="text-xs font-semibold text-slate-400 group-hover:text-blue-600">10問 <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+              <div class="font-bold text-slate-800 mt-1">熱と電気（ゼーベック効果・ペルチェ効果・トムソン効果）</div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. クイズプレイ画面 -->
+      <section id="quiz-play" class="hidden space-y-5 animate-fade-in">
+        <!-- 上部ナビ＆進捗バー -->
+        <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+          <div class="flex items-center justify-between text-xs sm:text-sm font-bold text-slate-600 mb-2">
+            <button onclick="confirmQuitQuiz()" class="text-slate-500 hover:text-slate-800 flex items-center gap-1">
+              <i class="fa-solid fa-arrow-left"></i> モード選択へ
+            </button>
+            <span id="quiz-mode-label" class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">全50問 順番</span>
+            <span>第 <strong id="q-current-num" class="text-blue-600 text-base">1</strong> / <span id="q-total-num">50</span> 問</span>
+          </div>
+          <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+            <div id="quiz-progress-bar" class="h-full bg-blue-600 transition-all duration-300" style="width: 2%"></div>
+          </div>
+        </div>
+
+        <!-- 問題カード -->
+        <div class="bg-white rounded-2xl p-5 sm:p-7 shadow-sm border border-slate-200">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span id="q-unit-badge" class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200">
+              1. 電流の発熱作用
+            </span>
+            <span id="q-page-badge" class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold">
+              教科書 p.48
+            </span>
+            <span id="q-type-badge" class="px-2.5 py-1 rounded-lg bg-amber-50 text-amber-700 text-xs font-bold border border-amber-200">
+              赤線・重要語句
+            </span>
+          </div>
+
+          <h2 id="q-text" class="text-base sm:text-xl font-extrabold text-slate-900 leading-relaxed">
+            問題文がここに表示されます。
+          </h2>
+
+          <!-- 4択選択肢コンテナ -->
+          <div id="q-options" class="mt-6 space-y-3">
+            <!-- JSで動的生成 -->
+          </div>
+        </div>
+
+        <!-- 解説＆次へエリア（回答後に表示） -->
+        <div id="q-feedback" class="hidden rounded-2xl p-5 sm:p-6 shadow-md border-2 animate-fade-in">
+          <div class="flex items-center gap-3 mb-3">
+            <div id="feedback-icon" class="w-10 h-10 rounded-full flex items-center justify-center text-white text-xl font-bold shrink-0">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <div>
+              <h3 id="feedback-title" class="text-lg sm:text-xl font-black">正解！</h3>
+              <p id="feedback-subtitle" class="text-xs font-bold opacity-80">よくできました！</p>
+            </div>
+          </div>
+
+          <div class="bg-white/90 rounded-xl p-4 border border-slate-200/80 text-sm text-slate-800 leading-relaxed space-y-2">
+            <div class="font-bold text-slate-700 flex items-center gap-1.5 border-b border-slate-200 pb-1.5">
+              <i class="fa-solid fa-lightbulb text-amber-500"></i> 教科書のポイント・計算解説
+            </div>
+            <p id="feedback-explanation" class="whitespace-pre-line"></p>
+          </div>
+
+          <div class="mt-5 flex justify-end">
+            <button id="btn-next-question" onclick="nextQuestion()" class="w-full sm:w-auto py-3.5 px-8 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base">
+              <span>次の問題へ</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 結果画面 -->
+      <section id="quiz-result" class="hidden space-y-6 animate-fade-in">
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 text-center">
+          <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-100 text-amber-500 flex items-center justify-center text-3xl mb-4">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h2 class="text-2xl font-black text-slate-900">演習おつかれさまでした！</h2>
+          <p id="result-mode-name" class="text-sm text-slate-500 mt-1">モード名</p>
+
+          <div class="my-6 inline-flex items-baseline gap-2 bg-slate-50 px-8 py-4 rounded-2xl border border-slate-200">
+            <span class="text-sm font-bold text-slate-500">正答数</span>
+            <span id="result-score" class="text-4xl sm:text-5xl font-black text-blue-600">0</span>
+            <span class="text-lg font-bold text-slate-600">/ <span id="result-total">10</span> 問</span>
+            <span class="ml-2 px-2.5 py-1 rounded-lg bg-blue-100 text-blue-800 text-sm font-extrabold">
+              <span id="result-percent">0</span>%
+            </span>
+          </div>
+
+          <p id="result-message" class="text-base font-bold text-slate-700 max-w-lg mx-auto"></p>
+
+          <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+            <button id="btn-result-retry-wrong" onclick="startQuiz('review')" class="hidden py-3 px-6 bg-rose-600 hover:bg-rose-700 text-white font-bold rounded-xl shadow transition">
+              <i class="fa-solid fa-rotate-right mr-1"></i> 間違えた問題だけ復習する
+            </button>
+            <button onclick="goHome()" class="py-3 px-6 bg-slate-800 hover:bg-slate-900 text-white font-bold rounded-xl shadow transition">
+              <i class="fa-solid fa-house mr-1"></i> トップ画面に戻る
+            </button>
+          </div>
+        </div>
+
+        <!-- 今回の解答一覧レビュー -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
+          <h3 class="font-extrabold text-slate-800 mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-clipboard-check text-blue-600"></i> 今回の解答ふりかえり
+          </h3>
+          <div id="result-review-list" class="space-y-2.5">
+            <!-- JSで動的生成 -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== 赤シート暗記ビュー ==================== -->
+    <div id="view-sheet" class="hidden space-y-5 animate-fade-in">
+      <!-- コントロールバー -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200 sticky top-[68px] z-20">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h2 class="text-lg font-extrabold text-slate-900 flex items-center gap-2">
+              <i class="fa-solid fa-highlighter text-red-600"></i> 赤線・太字・重要公式 暗記シート
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">赤字の箇所をタップすると個別に表示／非表示を切り替えられます。</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button id="toggle-red-sheet-btn" onclick="toggleRedSheet()" class="w-full sm:w-auto py-2.5 px-4 rounded-xl font-bold text-sm shadow transition flex items-center justify-center gap-2 bg-red-600 text-white hover:bg-red-700">
+              <i class="fa-solid fa-eye-slash"></i> <span id="toggle-red-sheet-text">赤シートで隠す（ON）</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 暗記カード一覧 -->
+      <div id="memorization-container" class="space-y-5 red-sheet-active"><div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
+          <h3 class="text-base sm:text-lg font-extrabold text-blue-900 bg-blue-50/80 px-3.5 py-2 rounded-xl border border-blue-100 mb-3">
+            1. 電流の発熱作用・ジュール熱・比熱（p.48〜49）
+          </h3>
+          <ul>
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>抵抗をもつ導体に電流を流すと発生する熱を <span class="red-sheet-word masked" onclick="toggleWord(this)">ジュール熱</span> といい、この関係を証明した法則を <span class="red-sheet-word masked" onclick="toggleWord(this)">ジュールの法則</span> という。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>ジュール熱の公式：<span class="red-sheet-word masked" onclick="toggleWord(this)">Q = I²Rt = VIt = (V²/R)t [J]</span>（時間 t は必ず <span class="red-sheet-word masked" onclick="toggleWord(this)">秒 [s]</span> で計算する）。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>物質の温度を 1℃ 上昇させるのに必要な熱を <span class="red-sheet-word masked" onclick="toggleWord(this)">熱容量</span> といい、物質 1kg あたりの熱容量を <span class="red-sheet-word masked" onclick="toggleWord(this)">比熱</span> という。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>熱量の式：<span class="red-sheet-word masked" onclick="toggleWord(this)">Q = Mc(T₂ - T₁) [J]</span>。水の比熱は <span class="red-sheet-word masked" onclick="toggleWord(this)">4.19 × 10³ J/(kg・K)</span>。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>セルシウス温度 t [℃] と絶対温度 T [K] の換算：<span class="red-sheet-word masked" onclick="toggleWord(this)">T = t + 273.15</span>。また、<span class="red-sheet-word masked" onclick="toggleWord(this)">1 cal = 4.19 J</span>。</div>
+          </li>
+        </ul>
+        </div><div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
+          <h3 class="text-base sm:text-lg font-extrabold text-blue-900 bg-blue-50/80 px-3.5 py-2 rounded-xl border border-blue-100 mb-3">
+            2. 電力と電力量（p.50〜51）
+          </h3>
+          <ul>
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>単位時間あたりの電気エネルギーを <span class="red-sheet-word masked" onclick="toggleWord(this)">電力</span> といい、単位には <span class="red-sheet-word masked" onclick="toggleWord(this)">ワット [W]</span>（1W = 1J/s）を用いる。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>電力の公式：<span class="red-sheet-word masked" onclick="toggleWord(this)">P = Q/t = I²R = VI = V²/R [W]</span>。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>電気エネルギーがある時間に行った仕事を <span class="red-sheet-word masked" onclick="toggleWord(this)">電力量</span> といい、式 <span class="red-sheet-word masked" onclick="toggleWord(this)">W = Pt [J]</span> で表される。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>電力量の単位換算：1 W・h = <span class="red-sheet-word masked" onclick="toggleWord(this)">3600 J</span>、1 kW・h = <span class="red-sheet-word masked" onclick="toggleWord(this)">3.6 × 10⁶ J</span>。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>近年普及している通信機能つきの電子式電力量計を <span class="red-sheet-word masked" onclick="toggleWord(this)">スマートメーター</span> という。</div>
+          </li>
+        </ul>
+        </div><div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
+          <h3 class="text-base sm:text-lg font-extrabold text-blue-900 bg-blue-50/80 px-3.5 py-2 rounded-xl border border-blue-100 mb-3">
+            3. 温度上昇と許容電流（p.52〜53）
+          </h3>
+          <ul>
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>絶縁物が支障なく使える限界の温度を <span class="red-sheet-word masked" onclick="toggleWord(this)">最高使用温度</span> といい、基準となる周囲温度を <span class="red-sheet-word masked" onclick="toggleWord(this)">最高周囲温度</span>（JISで <span class="red-sheet-word masked" onclick="toggleWord(this)">40℃</span>）という。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>耐熱クラス105（A）の場合、許される最大の温度上昇（<span class="red-sheet-word masked" onclick="toggleWord(this)">温度上昇限度</span>）は 105 - 40 = <span class="red-sheet-word masked" onclick="toggleWord(this)">65℃</span> である。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>耐熱クラス（JIS C 4003）：Y(<span class="red-sheet-word masked" onclick="toggleWord(this)">90℃</span>), A(<span class="red-sheet-word masked" onclick="toggleWord(this)">105℃</span>), E(<span class="red-sheet-word masked" onclick="toggleWord(this)">120℃</span>), B(<span class="red-sheet-word masked" onclick="toggleWord(this)">130℃</span>), F(<span class="red-sheet-word masked" onclick="toggleWord(this)">155℃</span>), H(<span class="red-sheet-word masked" onclick="toggleWord(this)">180℃</span>)。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>絶縁電線に流すことができる最大の電流値を <span class="red-sheet-word masked" onclick="toggleWord(this)">許容電流</span> といい、抵抗器で定められた最大電力を <span class="red-sheet-word masked" onclick="toggleWord(this)">許容電力</span> という。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>抵抗器の許容電流の公式：<span class="red-sheet-word masked" onclick="toggleWord(this)">I = √(P / R) [A]</span>。</div>
+          </li>
+        </ul>
+        </div><div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
+          <h3 class="text-base sm:text-lg font-extrabold text-blue-900 bg-blue-50/80 px-3.5 py-2 rounded-xl border border-blue-100 mb-3">
+            4. 電気回路の安全（p.54〜55）
+          </h3>
+          <ul>
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>過電流を遮断して回路を保護する器具には <span class="red-sheet-word masked" onclick="toggleWord(this)">ヒューズ</span> と <span class="red-sheet-word masked" onclick="toggleWord(this)">配線用遮断器</span> がある。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>ヒューズには <span class="red-sheet-word masked" onclick="toggleWord(this)">抵抗率が小さく融点の低い</span> 金属が使われ、配線用遮断器には熱膨張率の異なる2枚の金属板を貼り合わせた <span class="red-sheet-word masked" onclick="toggleWord(this)">バイメタル</span> が使われる。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>プラグとコンセントなどの接触状態によって生じる抵抗を <span class="red-sheet-word masked" onclick="toggleWord(this)">接触抵抗</span> といい、酸化被膜や汚れで大きくなると火災等の原因になる。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>絶縁抵抗の公式：<span class="red-sheet-word masked" onclick="toggleWord(this)">V / I₀ [Ω]</span>（絶縁抵抗計の単位表示は <span class="red-sheet-word masked" onclick="toggleWord(this)">MΩ</span>）。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>感電防止のため機器の金属部分を大地につなぐことを <span class="red-sheet-word masked" onclick="toggleWord(this)">接地（アース）</span> といい、接地抵抗は <span class="red-sheet-word masked" onclick="toggleWord(this)">V_EP / I [Ω]</span> で求める。</div>
+          </li>
+        </ul>
+        </div><div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
+          <h3 class="text-base sm:text-lg font-extrabold text-blue-900 bg-blue-50/80 px-3.5 py-2 rounded-xl border border-blue-100 mb-3">
+            5. 熱と電気（p.56〜57）
+          </h3>
+          <ul>
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>2種類の金属の両端を接合した <span class="red-sheet-word masked" onclick="toggleWord(this)">熱電対</span> の2つの接合点に温度差を与えると起電力が生じる現象を <span class="red-sheet-word masked" onclick="toggleWord(this)">ゼーベック効果</span> という。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>ゼーベック効果で生じる起電力を <span class="red-sheet-word masked" onclick="toggleWord(this)">熱起電力</span>、流れる電流を <span class="red-sheet-word masked" onclick="toggleWord(this)">熱電流</span>、温度が高い方を <span class="red-sheet-word masked" onclick="toggleWord(this)">温接点</span>、低い方を <span class="red-sheet-word masked" onclick="toggleWord(this)">冷接点</span> という。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>接合点を切り離して別の金属 C を挿入しても、両端の温度が同じなら熱起電力が変わらない性質を <span class="red-sheet-word masked" onclick="toggleWord(this)">中間金属の法則</span> という。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>熱電温度計に使われる <span class="red-sheet-word masked" onclick="toggleWord(this)">コンスタンタン</span> は、<span class="red-sheet-word masked" onclick="toggleWord(this)">銅とニッケル</span> の合金である。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>異なる金属の接合部に電流を流すと熱の発生・吸収が起こる現象を <span class="red-sheet-word masked" onclick="toggleWord(this)">ペルチェ効果</span> といい、<span class="red-sheet-word masked" onclick="toggleWord(this)">電子冷却装置（ペルチェ素子）</span> に利用される。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>温度差がある単一導体に電流を流すとジュール熱以外の発熱・吸熱が起こる現象を <span class="red-sheet-word masked" onclick="toggleWord(this)">トムソン効果</span> という。</div>
+          </li>
+        
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>高温部から低温部へ電流を流すと、<span class="red-sheet-word masked" onclick="toggleWord(this)">銅・アンチモン</span> は熱を発生し、<span class="red-sheet-word masked" onclick="toggleWord(this)">鉄・ニッケル</span> は熱を吸収する。なお <span class="red-sheet-word masked" onclick="toggleWord(this)">鉛</span> はトムソン効果が起こらない基準金属である。</div>
+          </li>
+        </ul>
+        </div></div>
+    </div>
+
+  </main>
+
+  <!-- 確認モーダル（alert/confirmの代替） -->
+  <div id="custom-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl animate-fade-in">
+      <h3 id="modal-title" class="text-lg font-extrabold text-slate-900">確認</h3>
+      <p id="modal-desc" class="text-sm text-slate-600 mt-2">メッセージ</p>
+      <div class="mt-6 flex justify-end gap-2">
+        <button onclick="closeModal()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm transition">
+          キャンセル
+        </button>
+        <button id="modal-confirm-btn" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm transition">
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-5 text-center mt-10">
+    <p>工業高校 電気基礎「第2節 電力と熱（p.48〜p.57）」定期考査・資格試験対策アプリ</p>
+  </footer>
+
+  <script>
+    // =========================================================================
+    // 1. 全50問データベース（教科書 p.48〜p.57 の赤線・太字・公式・例題・問を完全網羅）
+    // =========================================================================
+    const QUESTIONS = [
+      // ---------------- 単元1: 電流の発熱作用・ジュール熱・比熱 (p.48〜49) [10問] ----------------
+      {
+        id: 1,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.48",
+        type: "赤線・重要語句",
+        question: "電気抵抗をもつ導体に電流を流すと熱が発生する。この熱を何といい、また電流・抵抗・発熱量の関係を実験的に証明したイギリスの物理学者ジュールの名をとった法則を何というか。",
+        options: [
+          "ジュール熱 ／ ジュールの法則",
+          "ペルチェ熱 ／ ゼーベックの法則",
+          "比熱 ／ 熱容量の法則",
+          "トムソン熱 ／ オームの法則"
+        ],
+        answer: 0,
+        explanation: "教科書p.48の赤線箇所です。導体に電流を流したときに発生する熱を「ジュール熱（Joule heat）」といい、その関係をまとめた法則を「ジュールの法則（Joule's law）」といいます。"
+      },
+      {
+        id: 2,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.48",
+        type: "重要公式",
+        question: "抵抗 R [Ω] に電圧 V [V] を加え、電流 I [A] が t [s] 間流れたときに発生するジュール熱 Q [J] を表す公式として、正しいものの組み合わせはどれか。",
+        options: [
+          "Q = I²Rt = VIt = (V²/R)t",
+          "Q = IRt = VIt = (V/R)t",
+          "Q = I²R/t = VI/t = V²/(Rt)",
+          "Q = I²Rt² = VIt² = (V²/R)t²"
+        ],
+        answer: 0,
+        explanation: "ジュールの法則の公式は Q = I²Rt [J] です。オームの法則 V = IR を代入することで、Q = VIt や Q = (V²/R)t にも変形できます（p.48 式1・例題2）。"
+      },
+      {
+        id: 3,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.48",
+        type: "計算問題（例題1）",
+        question: "【例題1】10Ωの抵抗に 10A の電流を 20分間 流した。このとき発生する熱量 Q [J] はいくらか。",
+        options: [
+          "1.2 × 10⁶ J",
+          "2.0 × 10⁴ J",
+          "1.2 × 10⁵ J",
+          "2.0 × 10³ J"
+        ],
+        answer: 0,
+        explanation: "時間 t は必ず「秒 [s]」に直して計算します。\n20分 = 20 × 60 = 1200秒\nQ = I²Rt = 10² × 10 × 1200 = 100 × 10 × 1200 = 1,200,000 J = 1.2 × 10⁶ J となります。"
+      },
+      {
+        id: 4,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.48",
+        type: "計算問題（問1）",
+        question: "【問1】5Ωの抵抗に 2A の電流を 30分間 流した。このとき発生する熱量 Q [J] はいくらか。",
+        options: [
+          "3.6 × 10⁴ J",
+          "6.0 × 10² J",
+          "1.8 × 10⁴ J",
+          "3.6 × 10³ J"
+        ],
+        answer: 0,
+        explanation: "30分 = 30 × 60 = 1800秒。\nQ = I²Rt = 2² × 5 × 1800 = 4 × 5 × 1800 = 36,000 J = 3.6 × 10⁴ J です。"
+      },
+      {
+        id: 5,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.48",
+        type: "計算問題（例題2・問2）",
+        question: "【問2】10Ωの抵抗に 20V の電圧を 1時間 通電した場合、発生する熱量 Q [J] はいくらか。",
+        options: [
+          "1.44 × 10⁵ J",
+          "2.4 × 10³ J",
+          "7.2 × 10⁴ J",
+          "1.44 × 10⁴ J"
+        ],
+        answer: 0,
+        explanation: "1時間 = 60分 = 3600秒。\n公式 Q = (V²/R)t より、\nQ = (20² / 10) × 3600 = (400 / 10) × 3600 = 40 × 3600 = 144,000 J = 1.44 × 10⁵ J となります。"
+      },
+      {
+        id: 6,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.49",
+        type: "赤線・重要語句",
+        question: "物質の温度を 1℃ だけ上昇させるのに必要な熱をその物質の（ ア ）といい、物質 1kg あたりの（ ア ）を（ イ ）という。（ ア ）と（ イ ）に入る語句の組み合わせはどれか。",
+        options: [
+          "ア：熱容量 ／ イ：比熱",
+          "ア：比熱 ／ イ：熱容量",
+          "ア：潜熱 ／ イ：ジュール熱",
+          "ア：熱起電力 ／ イ：熱伝導率"
+        ],
+        answer: 0,
+        explanation: "教科書p.49の赤線です。物体全体の温度を1℃上げるのに必要な熱が「熱容量（thermal capacity）」、物質1kgあたりの熱容量が「比熱（specific heat）」です。"
+      },
+      {
+        id: 7,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.49",
+        type: "重要公式・数値",
+        question: "質量 M [kg]、比熱 c [J/(kg・K)] の物質の温度を T₁ [K] から T₂ [K] に上昇させるのに必要な熱量 Q [J] の式と、水の比熱の値として正しいものはどれか。",
+        options: [
+          "Q = Mc(T₂ - T₁) ／ 水の比熱：4.19 × 10³ J/(kg・K)",
+          "Q = (M/c)(T₂ - T₁) ／ 水の比熱：4.19 J/(kg・K)",
+          "Q = Mc(T₁ + T₂) ／ 水の比熱：1.00 × 10³ J/(kg・K)",
+          "Q = c(T₂ - T₁)/M ／ 水の比熱：4.19 × 10² J/(kg・K)"
+        ],
+        answer: 0,
+        explanation: "教科書p.49 式2・式3の重要事項です。水の比熱は c = 4.19 × 10³ J/(kg・K) であり、1gの水を1℃上げるのに必要な熱量 4.19 J (= 1 cal) の1000倍（1kgあたり）です。"
+      },
+      {
+        id: 8,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.49",
+        type: "計算問題（例題3）",
+        question: "【例題3】10kgの水の温度を、20℃から 80℃ に上昇させるのに必要な熱量 Q [J] はいくらか。ただし、水の比熱は 4.19 × 10³ J/(kg・K) とする。",
+        options: [
+          "2.51 × 10⁶ J",
+          "3.35 × 10⁶ J",
+          "8.38 × 10⁵ J",
+          "2.51 × 10³ J"
+        ],
+        answer: 0,
+        explanation: "Q = Mc(T₂ - T₁) より、\nQ = 10 × (4.19 × 10³) × (80 - 20) = 4.19 × 10⁴ × 60 = 2,514,000 J ≒ 2.51 × 10⁶ J です。"
+      },
+      {
+        id: 9,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.49",
+        type: "計算問題（問3）",
+        question: "【問3】1g の銅（比熱 0.39 × 10³ J/(kg・K)）の温度を、25℃ から 1025℃ に上昇させるのに必要な熱量 Q [J] はいくらか。",
+        options: [
+          "3.9 × 10² J （390 J）",
+          "3.9 × 10⁵ J",
+          "39 J",
+          "3.9 × 10³ J"
+        ],
+        answer: 0,
+        explanation: "質量 M は kg に直します：1g = 1 × 10⁻³ kg。\n温度差は 1025 - 25 = 1000 K。\nQ = (1 × 10⁻³) × (0.39 × 10³) × 1000 = 0.39 × 1000 = 390 J = 3.9 × 10² J となります。"
+      },
+      {
+        id: 10,
+        unit: 1,
+        unitName: "1. 電流の発熱作用・ジュール熱・比熱",
+        page: "p.49",
+        type: "POINT・換算",
+        question: "セルシウス温度 t [℃] から絶対温度 T [K] への換算式と、1 cal のジュール換算として正しいものはどれか。",
+        options: [
+          "T = t + 273.15 ／ 1 cal = 4.19 J",
+          "T = t - 273.15 ／ 1 cal = 4.19 J",
+          "T = t + 273.15 ／ 1 cal = 0.24 J",
+          "T = t + 100 ／ 1 cal = 4190 J"
+        ],
+        answer: 0,
+        explanation: "教科書p.49右下のPOINT欄です。絶対温度 T = t + 273.15（温度差は 1K と 1℃ で等しい）、また 1gの水を1℃上げる熱量 1 cal = 4.19 J です。"
+      },
+
+      // ---------------- 単元2: 電力と電力量 (p.50〜51) [10問] ----------------
+      {
+        id: 11,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.50",
+        type: "赤線・重要語句",
+        question: "単位時間あたりの電気エネルギーを（ ア ）といい、その単位には（ イ ）（記号 W）が用いられる。（ ア ）と（ イ ）の組み合わせはどれか。",
+        options: [
+          "ア：電力 ／ イ：ワット",
+          "ア：電力量 ／ イ：ジュール",
+          "ア：電力 ／ イ：ジュール",
+          "ア：電力量 ／ イ：ワット時"
+        ],
+        answer: 0,
+        explanation: "教科書p.50の赤線です。単位時間あたりに電気エネルギーを発生・輸送・消費する割合を「電力（electric power）」といい、単位は「ワット [W]」（1W = 1J/s）です。"
+      },
+      {
+        id: 12,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.50",
+        type: "重要公式",
+        question: "抵抗 R [Ω] に電圧 V [V] を加え、電流 I [A] が流れているときの電力 P [W] を表す公式として、誤っているものはどれか。",
+        options: [
+          "P = I² / R",
+          "P = Q / t",
+          "P = VI",
+          "P = V² / R"
+        ],
+        answer: 0,
+        explanation: "電力の公式は P = Q/t = I²R = VI = V²/R [W] です（p.50 式4）。「I²/R」は誤りです。"
+      },
+      {
+        id: 13,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.50",
+        type: "計算問題（例題4・問5）",
+        question: "【問5】100Vの電源に接続された抵抗器があり、流れる電流を測定すると 2A であった。このときの抵抗 R [Ω] と消費電力 P [W] の組み合わせはどれか。",
+        options: [
+          "R = 50 Ω ／ P = 200 W",
+          "R = 200 Ω ／ P = 50 W",
+          "R = 50 Ω ／ P = 400 W",
+          "R = 20 Ω ／ P = 200 W"
+        ],
+        answer: 0,
+        explanation: "オームの法則より R = V / I = 100 / 2 = 50 Ω。\n電力は P = VI = 100 × 2 = 200 W となります。"
+      },
+      {
+        id: 14,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.50",
+        type: "計算問題（問6）",
+        question: "【問6】5Ωの抵抗をもつ電熱線がある。100Vの電圧を加えたときに消費する電力 P [W] はいくらか。",
+        options: [
+          "2000 W （2 kW）",
+          "500 W",
+          "20 W",
+          "1000 W （1 kW）"
+        ],
+        answer: 0,
+        explanation: "公式 P = V² / R を用います。\nP = 100² / 5 = 10000 / 5 = 2000 W（= 2 kW）です。"
+      },
+      {
+        id: 15,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.50",
+        type: "計算問題（例題5・問7）",
+        question: "【問7】ある抵抗器に 5A の電流が流れているとき、1kW の電力が消費された。この抵抗器に加わっている電圧 V [V] と抵抗 R [Ω] はいくらか。",
+        options: [
+          "V = 200 V ／ R = 40 Ω",
+          "V = 5000 V ／ R = 1000 Ω",
+          "V = 200 V ／ R = 1000 Ω",
+          "V = 50 V ／ R = 10 Ω"
+        ],
+        answer: 0,
+        explanation: "1 kW = 1000 W です。\nP = VI より V = P / I = 1000 / 5 = 200 V。\nR = V / I = 200 / 5 = 40 Ω となります。"
+      },
+      {
+        id: 16,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.51",
+        type: "赤線・重要公式",
+        question: "電気エネルギーがある時間に行った仕事を（ ア ）といい、P [W] の電力で t [s] 間に行った仕事 W [J] は式（ イ ）で表される。（ ア ）と（ イ ）の組み合わせはどれか。",
+        options: [
+          "ア：電力量 ／ イ：W = Pt",
+          "ア：電力 ／ イ：W = P / t",
+          "ア：電力量 ／ イ：W = P²t",
+          "ア：熱容量 ／ イ：W = Pt"
+        ],
+        answer: 0,
+        explanation: "教科書p.51の赤線と式5です。電気エネルギーがある時間に行った仕事を「電力量（electric energy）」といい、W = Pt [J] で表されます。"
+      },
+      {
+        id: 17,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.51",
+        type: "単位換算（表2）",
+        question: "電力量の単位の関係として、1 kW・h（キロワット時）をジュール [J] に換算した値はどれか。",
+        options: [
+          "3.6 × 10⁶ J",
+          "3.6 × 10³ J",
+          "1.0 × 10³ J",
+          "6.0 × 10⁴ J"
+        ],
+        answer: 0,
+        explanation: "教科書p.51 表2の重要数値です。\n1 W・h = 1 W × 3600 s = 3600 J = 3.6 × 10³ J。\n1 kW・h = 1000 W・h = 3,600,000 J = 3.6 × 10⁶ J です。"
+      },
+      {
+        id: 18,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.51",
+        type: "計算問題（例題6）",
+        question: "【例題6】10Ωの抵抗に 20A の電流を 2秒間 流した。この抵抗で消費される電力量 W は何ワット秒 [W・s] か。また、同じ電流を 1時間 流すと何キロワット時 [kW・h] になるか。",
+        options: [
+          "8000 W・s ／ 4 kW・h",
+          "400 W・s ／ 4 kW・h",
+          "8000 W・s ／ 4000 kW・h",
+          "2000 W・s ／ 2 kW・h"
+        ],
+        answer: 0,
+        explanation: "まず電力 P = I²R = 20² × 10 = 4000 W (= 4 kW)。\n2秒間の電力量：W = Pt = 4000 × 2 = 8000 W・s。\n1時間の電力量：W = 4 kW × 1 h = 4 kW・h となります。"
+      },
+      {
+        id: 19,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.51",
+        type: "計算問題（問8）",
+        question: "【問8】ある電熱線に 100V の電圧が加わり、5A の電流が流れている。この電熱線を 2時間15分 使用すると、消費される電力量 W は何キロワット時 [kW・h] か。",
+        options: [
+          "1.125 kW・h",
+          "1125 kW・h",
+          "2.15 kW・h",
+          "0.5 kW・h"
+        ],
+        answer: 0,
+        explanation: "電力 P = VI = 100 × 5 = 500 W = 0.5 kW。\n時間は 2時間15分 = 2 + (15/60) = 2.25 時間。\nよって W = 0.5 kW × 2.25 h = 1.125 kW・h です（ジュール換算なら 4.05 × 10⁶ J）。"
+      },
+      {
+        id: 20,
+        unit: 2,
+        unitName: "2. 電力と電力量",
+        page: "p.51",
+        type: "機器・用語",
+        question: "近年家庭に普及しており、使用電力量を自動測定してデータ送信できる通信機能つき電力量計を何と呼ぶか。",
+        options: [
+          "スマートメーター",
+          "誘導形電力量計",
+          "メガー（絶縁抵抗計）",
+          "バイメタルブレーカー"
+        ],
+        answer: 0,
+        explanation: "教科書p.51 本文および図3(b)に記載されています。従来の円盤が回る誘導形電力量計に代わり、通信機能つき電子式電力量計（スマートメーター）が普及しています。"
+      },
+
+      // ---------------- 単元3: 温度上昇と許容電流 (p.52〜53) [10問] ----------------
+      {
+        id: 21,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.52",
+        type: "物理現象",
+        question: "物体に一定の電流を流し続けると温度は上昇するが、やがてある温度で一定となる。このときの熱の平衡状態として正しい説明はどれか。",
+        options: [
+          "1秒あたりに発生する熱量 P と、1秒あたりに放出する熱量 P' が等しくなる（P = P'）",
+          "1秒あたりに発生する熱量 P がゼロになる（P = 0）",
+          "1秒あたりに放出する熱量 P' が発生する熱量 P より大きくなる（P < P'）",
+          "物体の電気抵抗が無限大になり電流が止まる"
+        ],
+        answer: 0,
+        explanation: "教科書p.52「1 電流による物体の温度上昇」および図4の解説です。P > P' の間は温度が上昇し、P = P' となると温度の上昇が止まり一定温度に落ち着きます。"
+      },
+      {
+        id: 22,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.52",
+        type: "赤線・重要語句",
+        question: "絶縁物が支障なく使える限界の温度を（ ア ）といい、JIS C 4034-1 で定められた電気機器の周囲温度の基準（ イ ）は 40℃ である。（ ア ）と（ イ ）に入る語句はどれか。",
+        options: [
+          "ア：最高使用温度 ／ イ：最高周囲温度",
+          "ア：温度上昇限度 ／ イ：最低周囲温度",
+          "ア：最高周囲温度 ／ イ：最高使用温度",
+          "ア：耐熱クラス ／ イ：許容温度"
+        ],
+        answer: 0,
+        explanation: "教科書p.52の赤線です。絶縁物が劣化せずに使える温度が「最高使用温度」、基準となる周囲温度が「最高周囲温度（40℃）」です。"
+      },
+      {
+        id: 23,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.52",
+        type: "赤線・計算",
+        question: "耐熱クラス 105（A）の最高使用温度は 105℃ であり、最高周囲温度が 40℃ のとき、許される最大の温度上昇（温度上昇限度 θ）は何℃か。",
+        options: [
+          "65 ℃",
+          "145 ℃",
+          "105 ℃",
+          "40 ℃"
+        ],
+        answer: 0,
+        explanation: "教科書p.52の赤線です。温度上昇限度 θ = 最高使用温度 - 最高周囲温度 = 105 - 40 = 65℃ となります。"
+      },
+      {
+        id: 24,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.52",
+        type: "表3・JIS規格",
+        question: "表3「絶縁の耐熱クラスの例（JIS C 4003）」において、指定文字 Y・A・E・B・F・H の耐熱クラス（最高使用温度）の並びとして正しいものはどれか。",
+        options: [
+          "Y:90℃, A:105℃, E:120℃, B:130℃, F:155℃, H:180℃",
+          "Y:60℃, A:90℃, E:105℃, B:120℃, F:130℃, H:155℃",
+          "Y:100℃, A:110℃, E:120℃, B:130℃, F:140℃, H:150℃",
+          "Y:90℃, A:100℃, E:120℃, B:140℃, F:160℃, H:180℃"
+        ],
+        answer: 0,
+        explanation: "教科書p.52 表3です。Y(90), A(105), E(120), B(130), F(155), H(180), N(200), R(220) の数値は試験頻出です（なお塩化ビニル樹脂は60℃）。"
+      },
+      {
+        id: 25,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.53",
+        type: "赤線・重要語句",
+        question: "絶縁電線において、温度上昇限度を超えない範囲で流すことができる最大の電流値をその絶縁電線の何というか。",
+        options: [
+          "許容電流",
+          "定格遮断電流",
+          "漏洩電流",
+          "短絡電流"
+        ],
+        answer: 0,
+        explanation: "教科書p.53の赤線です。絶縁物が最高使用温度以上にならないように定められた最大の電流値を「許容電流（allowable current）」といいます。"
+      },
+      {
+        id: 26,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.53",
+        type: "表4・電線の知識",
+        question: "屋内配線用のビニル絶縁電線（銅単線、最高許容温度60℃）において、直径 1.6 mm と 2.0 mm の許容電流（表4）の組み合わせはどれか。",
+        options: [
+          "1.6mm：27 A ／ 2.0mm：35 A",
+          "1.6mm：15 A ／ 2.0mm：20 A",
+          "1.6mm：35 A ／ 2.0mm：48 A",
+          "1.6mm：7 A ／ 2.0mm：12 A"
+        ],
+        answer: 0,
+        explanation: "教科書p.53 表4です。ビニル絶縁電線（銅単線）の許容電流は、直径 1.6mm で 27A、2.0mm で 35A、2.6mm で 48A です（電気工事士試験でも超重要）。"
+      },
+      {
+        id: 27,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.53",
+        type: "赤線・重要語句",
+        question: "抵抗器には許容電流を示すかわりに、使用可能な最大電力が示されている。この電力をその抵抗器の何というか。",
+        options: [
+          "許容電力",
+          "皮相電力",
+          "無効電力",
+          "熱起電力"
+        ],
+        answer: 0,
+        explanation: "教科書p.53の赤線です。抵抗器では 1/8 W、1/4 W、1 W などの「許容電力（allowable power）」が定められています。"
+      },
+      {
+        id: 28,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.53",
+        type: "重要公式",
+        question: "抵抗値 R [Ω]、許容電力 P [W] の抵抗器に流すことができる許容電流 I [A] を表す公式はどれか。",
+        options: [
+          "I = √(P / R)",
+          "I = P / R",
+          "I = √(P × R)",
+          "I = P² / R"
+        ],
+        answer: 0,
+        explanation: "教科書p.53 式6です。電力の式 P = I²R を I について解くことで、I = √(P / R) [A] が導かれます。"
+      },
+      {
+        id: 29,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.53",
+        type: "計算問題（例題7）",
+        question: "【例題7】抵抗値が 1kΩ で、許容電力が 1/8 W の抵抗器がある。この抵抗器の許容電流 I [mA] はいくらか。",
+        options: [
+          "11.1 mA （約 0.0111 A）",
+          "125 mA",
+          "35.4 mA",
+          "1.11 mA"
+        ],
+        answer: 0,
+        explanation: "1 kΩ = 1000 Ω、P = 1/8 = 0.125 W。\nI = √(P / R) = √(0.125 / 1000) = √(0.000125) ≒ 0.01118 A。\n許容電流を超えないよう切り捨てて 0.0111 A = 11.1 mA とします（脚注2の注意ポイント）。"
+      },
+      {
+        id: 30,
+        unit: 3,
+        unitName: "3. 温度上昇と許容電流",
+        page: "p.53",
+        type: "計算問題（問10）",
+        question: "【問10】10Ωの抵抗があって、その許容電力は 10kW であるという。この抵抗器の許容電流 I [A] はいくらか。",
+        options: [
+          "31.6 A",
+          "1000 A",
+          "100 A",
+          "10 A"
+        ],
+        answer: 0,
+        explanation: "10 kW = 10,000 W、R = 10 Ω。\nI = √(P / R) = √(10000 / 10) = √1000 ≒ 31.62 A → 31.6 A となります。"
+      },
+
+      // ---------------- 単元4: 電気回路の安全 (p.54〜55) [10問] ----------------
+      {
+        id: 31,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.54",
+        type: "赤線・重要語句",
+        question: "電気回路の保護や安全のため、設定値より大きな電流が流れたときに電流を遮断する器具として、教科書の赤線で挙げられている2つは何か。",
+        options: [
+          "ヒューズ と 配線用遮断器",
+          "変圧器 と 整流器",
+          "熱電対 と ペルチェ素子",
+          "絶縁抵抗計 と 接地極"
+        ],
+        answer: 0,
+        explanation: "教科書p.54の赤線です。過電流から回路を保護するために「ヒューズ（fuse）」や「配線用遮断器（molded-case circuit breaker）」が用いられます。"
+      },
+      {
+        id: 32,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.54",
+        type: "材料・性質",
+        question: "電流によるジュール熱により溶けて電流を遮断する「ヒューズの材料」として適している金属の条件はどれか。",
+        options: [
+          "抵抗率が小さく、融点の低い金属",
+          "抵抗率が大きく、融点の高い金属",
+          "抵抗率が小さく、融点の高い金属",
+          "抵抗率が大きく、融点の低い金属"
+        ],
+        answer: 0,
+        explanation: "教科書p.54 本文の重要ポイントです。普段の電流で無駄な電力損失や発熱を起こさないよう「抵抗率が小さく」、過電流時にはすぐ溶断するよう「融点の低い」金属（鉛とすずの合金や亜鉛など）が用いられます。"
+      },
+      {
+        id: 33,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.54",
+        type: "赤線・構造",
+        question: "配線用遮断器に内蔵され、一定より大きな電流が流れると熱で湾曲して接点を開く部品を何というか。またその構造はどのようなものか。",
+        options: [
+          "バイメタル（熱膨張率が異なる2種類の金属板を貼り合わせたもの）",
+          "コンスタンタン（銅とニッケルを混ぜ合わせた合金線）",
+          "ペルチェ素子（P形とN形の半導体を接合したもの）",
+          "つめつきヒューズ（融点の低い単一金属板）"
+        ],
+        answer: 0,
+        explanation: "教科書p.54の赤線および図7です。「バイメタル（bimetal）」は熱膨張率が異なる2種類の金属板を貼り合わせたもので、過電流の熱で曲がり回路を遮断します。"
+      },
+      {
+        id: 34,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.54",
+        type: "赤線・重要語句",
+        question: "プラグとコンセントの接触部分のように、接触部分の接触状態によって生じる抵抗を何というか。",
+        options: [
+          "接触抵抗",
+          "絶縁抵抗",
+          "接地抵抗",
+          "内部抵抗"
+        ],
+        answer: 0,
+        explanation: "教科書p.54の赤線です。接触部分の接触状態によって生じる抵抗を「接触抵抗（contact resistance）」といいます。"
+      },
+      {
+        id: 35,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.54",
+        type: "事故原因",
+        question: "接触抵抗が大きくなる原因と、それによって引き起こされる危険性として正しいものはどれか。",
+        options: [
+          "表面の凹凸・汚れ・絶縁性の酸化被膜によって接触面積が小さくなり、ジュール熱が大きくなって火災等の原因となる",
+          "接触面積が大きくなりすぎて電流が流れすぎ、感電の原因となる",
+          "接触部分の温度が下がりすぎて、絶縁体が凍結・破損する",
+          "接触部分に熱起電力が発生し、逆電流が流れて機器が故障する"
+        ],
+        answer: 0,
+        explanation: "教科書p.54「2 接触抵抗」および図9です。汚れや酸化被膜で接触抵抗が大きくなると、I²R のジュール熱が増大し、プラグの溶融や火災の原因となります。"
+      },
+      {
+        id: 36,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.55",
+        type: "赤線・重要公式",
+        question: "絶縁体に直流電圧 V [V] を加えたとき、絶縁体を通って漏れ流れる電流（漏れ電流）を I₀ [A] とすると、絶縁抵抗 [Ω] を表す式はどれか。",
+        options: [
+          "V / I₀",
+          "I₀ / V",
+          "V × I₀",
+          "V_EP / I"
+        ],
+        answer: 0,
+        explanation: "教科書p.55の赤線です。加えた電圧 V [V] と漏れ電流 I₀ [A] の比、すなわち V / I₀ [Ω] を「絶縁抵抗（insulation resistance）」といいます。"
+      },
+      {
+        id: 37,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.55",
+        type: "測定器",
+        question: "図10のような「絶縁抵抗計」の指示盤に表示されている単位記号（10⁶ Ω を表す記号）はどれか。",
+        options: [
+          "MΩ （メガオーム）",
+          "kΩ （キロオーム）",
+          "mΩ （ミリオーム）",
+          "μΩ （マイクロオーム）"
+        ],
+        answer: 0,
+        explanation: "教科書p.55 図10のキャプションです。絶縁抵抗計の指示盤には MΩ（10⁶ Ω）と表記されており、現場では「メガー」とも呼ばれます。内部に直流高電圧を発生させる回路が入っています。"
+      },
+      {
+        id: 38,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.55",
+        type: "安全技術",
+        question: "洗濯機や電気温水器など水気や湿気の多い場所で使用する電気器具の金属製外箱を、図12(a)のように大地と電気的に接続することを何というか。",
+        options: [
+          "接地（アース）",
+          "短絡（ショート）",
+          "絶縁（インシュレーション）",
+          "遮断（ブレーク）"
+        ],
+        answer: 0,
+        explanation: "教科書p.55「4 接地抵抗」の赤線です。漏電時の感電防止などの安全のため、機器の金属部分を大地に接続することを「接地（アース）」といいます。"
+      },
+      {
+        id: 39,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.55",
+        type: "赤線・重要公式",
+        question: "大地に埋設した接地極 E と補助接地極 C の間に交流電流 I [A] を流し、接地極 E の大地に対する電圧 V_EP [V] を測定したとき、接地抵抗 [Ω] を表す式はどれか。",
+        options: [
+          "V_EP / I",
+          "I / V_EP",
+          "V_EP × I",
+          "V / I₀"
+        ],
+        answer: 0,
+        explanation: "教科書p.55の赤線です。接地極 E の大地に対する電圧 V_EP [V] と電流 I [A] の比、すなわち V_EP / I [Ω] を「接地抵抗（grounding resistance）」といいます。"
+      },
+      {
+        id: 40,
+        unit: 4,
+        unitName: "4. 電気回路の安全",
+        page: "p.55",
+        type: "測定方法",
+        question: "接地抵抗を測定する際、電位計用の補助接地極 P はどのような位置に配置する必要があるか。",
+        options: [
+          "接地極 E から十分に離れ、電圧が一定になる位置",
+          "接地極 E にできるだけ密着させた位置",
+          "補助接地極 C と同じ穴に埋設した位置",
+          "電気器具の金属フレームに直接つないだ位置"
+        ],
+        answer: 0,
+        explanation: "教科書p.55 最終段落および図12(b)です。電圧 V_EP は接地極からの距離によって変化するため、接地極 E から十分に離れて電圧が一定（平坦）になる位置に補助接地極 P を配置して測定します。"
+      },
+
+      // ---------------- 単元5: 熱と電気 (p.56〜57) [10問] ----------------
+      {
+        id: 41,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.56",
+        type: "赤線・重要語句",
+        question: "2種類の金属の両端を接合したものを（ ア ）といい、その2つの接合点に温度差を与えると起電力が発生する現象を（ イ ）という。（ ア ）と（ イ ）の組み合わせはどれか。",
+        options: [
+          "ア：熱電対 ／ イ：ゼーベック効果",
+          "ア：バイメタル ／ イ：ペルチェ効果",
+          "ア：熱電対 ／ イ：トムソン効果",
+          "ア：ペルチェ素子 ／ イ：ジュールの法則"
+        ],
+        answer: 0,
+        explanation: "教科書p.56の赤線です。2種類の金属の両端を接合したものを「熱電対（thermocouple）」、2つの接合点に温度差を与えたときに起電力が生じる現象を「ゼーベック効果（Seebeck effect）」といいます。"
+      },
+      {
+        id: 42,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.56",
+        type: "赤線・重要語句",
+        question: "ゼーベック効果によって生じる起電力を（ ア ）、流れる電流を（ イ ）といい、接合点の温度が高いほうを（ ウ ）、低いほうを（ エ ）という。正しい組み合わせはどれか。",
+        options: [
+          "ア：熱起電力 ／ イ：熱電流 ／ ウ：温接点 ／ エ：冷接点",
+          "ア：熱電流 ／ イ：熱起電力 ／ ウ：冷接点 ／ エ：温接点",
+          "ア：逆起電力 ／ イ：漏れ電流 ／ ウ：高温部 ／ エ：低温部",
+          "ア：熱起電力 ／ イ：許容電流 ／ ウ：温接点 ／ エ：中間金属"
+        ],
+        answer: 0,
+        explanation: "教科書p.56の赤線群です。「熱起電力」「熱電流」「温接点」「冷接点」の4つの用語を正確に区別しておきましょう。"
+      },
+      {
+        id: 43,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.56",
+        type: "赤線・法則",
+        question: "熱電対の接合点の一方を切り離して任意の金属 C を挿入したとき、C の両端の接合点①と②の温度がどちらも切り離す前の接合点の温度と同じならば熱起電力は変わらない。この性質を何というか。",
+        options: [
+          "中間金属の法則",
+          "ジュールの法則",
+          "ゼーベックの法則",
+          "フレミングの法則"
+        ],
+        answer: 0,
+        explanation: "教科書p.56の赤線および図13(b)です。この「中間金属の法則」があるおかげで、回路に電圧計やリード線（銅線など）をつないでも正確に熱起電力を測定できます。"
+      },
+      {
+        id: 44,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.56",
+        type: "赤線・材料",
+        question: "ゼーベック効果の原理を利用して温度を測定する計器を（ ア ）といい、その材料によく使われる合金「コンスタンタン」は（ イ ）の合金である。（ ア ）と（ イ ）の組み合わせはどれか。",
+        options: [
+          "ア：熱電温度計 ／ イ：銅とニッケル",
+          "ア：熱電温度計 ／ イ：鉛とすず",
+          "ア：絶縁抵抗計 ／ イ：銅と亜鉛",
+          "ア：バイメタル温度計 ／ イ：鉄とクロム"
+        ],
+        answer: 0,
+        explanation: "教科書p.56の赤線「熱電温度計（thermoelectric thermometer）」および脚注1「コンスタンタンは銅とニッケルの合金」からの出題です。非接触体温計の赤外線検出にも熱電対が使われています。"
+      },
+      {
+        id: 45,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.57",
+        type: "赤線・重要語句",
+        question: "2種類の異なる金属を接合して電流を流すと、接合部でジュール熱以外に熱の発生や吸収が行われる。この現象を何というか。",
+        options: [
+          "ペルチェ効果",
+          "ゼーベック効果",
+          "トムソン効果",
+          "ホール効果"
+        ],
+        answer: 0,
+        explanation: "教科書p.57「2 ペルチェ効果」の赤線です。ゼーベック効果の逆の現象で、電流を流すことで接合部に吸熱・発熱が起こる現象を「ペルチェ効果（Peltier effect）」といいます。"
+      },
+      {
+        id: 46,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.57",
+        type: "応用・性質",
+        question: "ペルチェ効果において電流の向きを逆にすると、接合部での熱の発生と吸収はどうなるか。また、この効果を利用した冷却・加熱装置を何と呼ぶか。",
+        options: [
+          "発熱と吸熱が逆になる ／ 電子冷却装置（ペルチェ素子）",
+          "発熱と吸熱は変わらない ／ 誘導加熱装置",
+          "発熱も吸熱も起こらなくなる ／ バイメタル遮断器",
+          "発熱量だけが2倍になる ／ 熱電温度計"
+        ],
+        answer: 0,
+        explanation: "教科書p.57 本文および図16・図17です。電流の向きを逆にすると吸熱と発熱が入れ替わります。これを利用した「電子冷却装置（ペルチェ素子）」は精密な自動温度調節に利用されます。"
+      },
+      {
+        id: 47,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.57",
+        type: "赤線・重要語句",
+        question: "1種類の均一な導体でも、2点間に温度差がある状態で電流を流すと、ジュール熱以外の熱を発生または吸収する。発見者であるイギリスの物理学者の名をとったこの現象を何というか。",
+        options: [
+          "トムソン効果",
+          "ペルチェ効果",
+          "ゼーベック効果",
+          "ジュールの法則"
+        ],
+        answer: 0,
+        explanation: "教科書p.57「3 トムソン効果」の赤線です。温度勾配のある単一導体に電流を流したときに生じる発熱・吸熱現象を「トムソン効果（Thomson effect）」といいます。"
+      },
+      {
+        id: 48,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.57",
+        type: "赤線・金属の性質",
+        question: "トムソン効果において、高温部から低温部方向に電流を流したとき、「熱を発生する金属」の組み合わせ（赤線箇所）はどれか。",
+        options: [
+          "銅 や アンチモン",
+          "鉄 や ニッケル",
+          "鉛 や 水銀",
+          "アルミニウム や 亜鉛"
+        ],
+        answer: 0,
+        explanation: "教科書p.57の赤線および図18のメモです。高温部→低温部へ電流を流すと、銅やアンチモンは「熱を発生」し、鉄やニッケルは「熱を吸収」します。"
+      },
+      {
+        id: 49,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.57",
+        type: "赤線・金属の性質",
+        question: "トムソン効果において、高温部から低温部方向に電流を流したとき、「熱を吸収する金属」の組み合わせ（赤線箇所）はどれか。",
+        options: [
+          "鉄 や ニッケル",
+          "銅 や アンチモン",
+          "鉛 や すず",
+          "金 や 銀"
+        ],
+        answer: 0,
+        explanation: "教科書p.57の赤線です。「銅・アンチモン＝発熱」「鉄・ニッケル＝吸熱」はペアで確実に覚えておきましょう。"
+      },
+      {
+        id: 50,
+        unit: 5,
+        unitName: "5. 熱と電気",
+        page: "p.57",
+        type: "脚注・基準金属",
+        question: "トムソン効果がほとんど起こらないため、ほかの導体と比べるとき（熱電能など）の基準になる金属はどれか（p.57 脚注1）。",
+        options: [
+          "鉛 （Pb）",
+          "銅 （Cu）",
+          "鉄 （Fe）",
+          "ニッケル （Ni）"
+        ],
+        answer: 0,
+        explanation: "教科書p.57 右下の脚注1です。「鉛には、トムソン効果が起こらないので、ほかの導体と比べるときの基準になる。」と記載されています。"
+      }
+    ];
+
+    // =========================================================================
+    // 2. 赤シート暗記用データ（教科書の赤線・太字・重要公式を単元別に整理）
+    // =========================================================================
+    const MEMORIZATION_DATA = [
+      {
+        unitTitle: "1. 電流の発熱作用・ジュール熱・比熱（p.48〜49）",
+        items: [
+          "抵抗をもつ導体に電流を流すと発生する熱を <span class='red-sheet-word masked' onclick='toggleWord(this)'>ジュール熱</span> といい、この関係を証明した法則を <span class='red-sheet-word masked' onclick='toggleWord(this)'>ジュールの法則</span> という。",
+          "ジュール熱の公式：<span class='red-sheet-word masked' onclick='toggleWord(this)'>Q = I²Rt = VIt = (V²/R)t [J]</span>（時間 t は必ず <span class='red-sheet-word masked' onclick='toggleWord(this)'>秒 [s]</span> で計算する）。",
+          "物質の温度を 1℃ 上昇させるのに必要な熱を <span class='red-sheet-word masked' onclick='toggleWord(this)'>熱容量</span> といい、物質 1kg あたりの熱容量を <span class='red-sheet-word masked' onclick='toggleWord(this)'>比熱</span> という。",
+          "熱量の式：<span class='red-sheet-word masked' onclick='toggleWord(this)'>Q = Mc(T₂ - T₁) [J]</span>。水の比熱は <span class='red-sheet-word masked' onclick='toggleWord(this)'>4.19 × 10³ J/(kg・K)</span>。",
+          "セルシウス温度 t [℃] と絶対温度 T [K] の換算：<span class='red-sheet-word masked' onclick='toggleWord(this)'>T = t + 273.15</span>。また、<span class='red-sheet-word masked' onclick='toggleWord(this)'>1 cal = 4.19 J</span>。"
+        ]
+      },
+      {
+        unitTitle: "2. 電力と電力量（p.50〜51）",
+        items: [
+          "単位時間あたりの電気エネルギーを <span class='red-sheet-word masked' onclick='toggleWord(this)'>電力</span> といい、単位には <span class='red-sheet-word masked' onclick='toggleWord(this)'>ワット [W]</span>（1W = 1J/s）を用いる。",
+          "電力の公式：<span class='red-sheet-word masked' onclick='toggleWord(this)'>P = Q/t = I²R = VI = V²/R [W]</span>。",
+          "電気エネルギーがある時間に行った仕事を <span class='red-sheet-word masked' onclick='toggleWord(this)'>電力量</span> といい、式 <span class='red-sheet-word masked' onclick='toggleWord(this)'>W = Pt [J]</span> で表される。",
+          "電力量の単位換算：1 W・h = <span class='red-sheet-word masked' onclick='toggleWord(this)'>3600 J</span>、1 kW・h = <span class='red-sheet-word masked' onclick='toggleWord(this)'>3.6 × 10⁶ J</span>。",
+          "近年普及している通信機能つきの電子式電力量計を <span class='red-sheet-word masked' onclick='toggleWord(this)'>スマートメーター</span> という。"
+        ]
+      },
+      {
+        unitTitle: "3. 温度上昇と許容電流（p.52〜53）",
+        items: [
+          "絶縁物が支障なく使える限界の温度を <span class='red-sheet-word masked' onclick='toggleWord(this)'>最高使用温度</span> といい、基準となる周囲温度を <span class='red-sheet-word masked' onclick='toggleWord(this)'>最高周囲温度</span>（JISで <span class='red-sheet-word masked' onclick='toggleWord(this)'>40℃</span>）という。",
+          "耐熱クラス105（A）の場合、許される最大の温度上昇（<span class='red-sheet-word masked' onclick='toggleWord(this)'>温度上昇限度</span>）は 105 - 40 = <span class='red-sheet-word masked' onclick='toggleWord(this)'>65℃</span> である。",
+          "耐熱クラス（JIS C 4003）：Y(<span class='red-sheet-word masked' onclick='toggleWord(this)'>90℃</span>), A(<span class='red-sheet-word masked' onclick='toggleWord(this)'>105℃</span>), E(<span class='red-sheet-word masked' onclick='toggleWord(this)'>120℃</span>), B(<span class='red-sheet-word masked' onclick='toggleWord(this)'>130℃</span>), F(<span class='red-sheet-word masked' onclick='toggleWord(this)'>155℃</span>), H(<span class='red-sheet-word masked' onclick='toggleWord(this)'>180℃</span>)。",
+          "絶縁電線に流すことができる最大の電流値を <span class='red-sheet-word masked' onclick='toggleWord(this)'>許容電流</span> といい、抵抗器で定められた最大電力を <span class='red-sheet-word masked' onclick='toggleWord(this)'>許容電力</span> という。",
+          "抵抗器の許容電流の公式：<span class='red-sheet-word masked' onclick='toggleWord(this)'>I = √(P / R) [A]</span>。"
+        ]
+      },
+      {
+        unitTitle: "4. 電気回路の安全（p.54〜55）",
+        items: [
+          "過電流を遮断して回路を保護する器具には <span class='red-sheet-word masked' onclick='toggleWord(this)'>ヒューズ</span> と <span class='red-sheet-word masked' onclick='toggleWord(this)'>配線用遮断器</span> がある。",
+          "ヒューズには <span class='red-sheet-word masked' onclick='toggleWord(this)'>抵抗率が小さく融点の低い</span> 金属が使われ、配線用遮断器には熱膨張率の異なる2枚の金属板を貼り合わせた <span class='red-sheet-word masked' onclick='toggleWord(this)'>バイメタル</span> が使われる。",
+          "プラグとコンセントなどの接触状態によって生じる抵抗を <span class='red-sheet-word masked' onclick='toggleWord(this)'>接触抵抗</span> といい、酸化被膜や汚れで大きくなると火災等の原因になる。",
+          "絶縁抵抗の公式：<span class='red-sheet-word masked' onclick='toggleWord(this)'>V / I₀ [Ω]</span>（絶縁抵抗計の単位表示は <span class='red-sheet-word masked' onclick='toggleWord(this)'>MΩ</span>）。",
+          "感電防止のため機器の金属部分を大地につなぐことを <span class='red-sheet-word masked' onclick='toggleWord(this)'>接地（アース）</span> といい、接地抵抗は <span class='red-sheet-word masked' onclick='toggleWord(this)'>V_EP / I [Ω]</span> で求める。"
+        ]
+      },
+      {
+        unitTitle: "5. 熱と電気（p.56〜57）",
+        items: [
+          "2種類の金属の両端を接合した <span class='red-sheet-word masked' onclick='toggleWord(this)'>熱電対</span> の2つの接合点に温度差を与えると起電力が生じる現象を <span class='red-sheet-word masked' onclick='toggleWord(this)'>ゼーベック効果</span> という。",
+          "ゼーベック効果で生じる起電力を <span class='red-sheet-word masked' onclick='toggleWord(this)'>熱起電力</span>、流れる電流を <span class='red-sheet-word masked' onclick='toggleWord(this)'>熱電流</span>、温度が高い方を <span class='red-sheet-word masked' onclick='toggleWord(this)'>温接点</span>、低い方を <span class='red-sheet-word masked' onclick='toggleWord(this)'>冷接点</span> という。",
+          "接合点を切り離して別の金属 C を挿入しても、両端の温度が同じなら熱起電力が変わらない性質を <span class='red-sheet-word masked' onclick='toggleWord(this)'>中間金属の法則</span> という。",
+          "熱電温度計に使われる <span class='red-sheet-word masked' onclick='toggleWord(this)'>コンスタンタン</span> は、<span class='red-sheet-word masked' onclick='toggleWord(this)'>銅とニッケル</span> の合金である。",
+          "異なる金属の接合部に電流を流すと熱の発生・吸収が起こる現象を <span class='red-sheet-word masked' onclick='toggleWord(this)'>ペルチェ効果</span> といい、<span class='red-sheet-word masked' onclick='toggleWord(this)'>電子冷却装置（ペルチェ素子）</span> に利用される。",
+          "温度差がある単一導体に電流を流すとジュール熱以外の発熱・吸熱が起こる現象を <span class='red-sheet-word masked' onclick='toggleWord(this)'>トムソン効果</span> という。",
+          "高温部から低温部へ電流を流すと、<span class='red-sheet-word masked' onclick='toggleWord(this)'>銅・アンチモン</span> は熱を発生し、<span class='red-sheet-word masked' onclick='toggleWord(this)'>鉄・ニッケル</span> は熱を吸収する。なお <span class='red-sheet-word masked' onclick='toggleWord(this)'>鉛</span> はトムソン効果が起こらない基準金属である。"
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // 3. 状態管理・ローカルストレージ
+    // =========================================================================
+    const STORAGE_KEY = "denki_kiso_sec2_progress_v1";
+    let userProgress = {
+      clearedIds: [], // 正解したことのある問題ID
+      wrongIds: []    // 直近で間違えた問題ID（復習対象）
+    };
+
+    let currentSession = {
+      modeTitle: "",
+      questions: [],
+      currentIndex: 0,
+      score: 0,
+      history: [] // { questionObj, selectedIdx, isCorrect }
+    };
+
+    let isRedSheetOn = true;
+
+    // 初期化処理
+    window.addEventListener("DOMContentLoaded", () => {
+      loadProgress();
+      updateHomeStats();
+      renderMemorizationSheet();
+    });
+
+    function loadProgress() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed.clearedIds)) userProgress.clearedIds = parsed.clearedIds;
+          if (Array.isArray(parsed.wrongIds)) userProgress.wrongIds = parsed.wrongIds;
+        }
+      } catch (e) {
+        console.warn("ストレージ読み込みエラー:", e);
+      }
+    }
+
+    function saveProgress() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(userProgress));
+      } catch (e) {
+        console.warn("ストレージ保存エラー:", e);
+      }
+    }
+
+    function updateHomeStats() {
+      const clearedCount = userProgress.clearedIds.length;
+      const wrongCount = userProgress.wrongIds.length;
+      const rate = Math.round((clearedCount / QUESTIONS.length) * 100);
+
+      document.getElementById("stat-cleared").textContent = clearedCount;
+      document.getElementById("stat-rate").textContent = rate;
+      document.getElementById("stat-wrong").textContent = wrongCount;
+      document.getElementById("review-btn-count").textContent = wrongCount;
+
+      const reviewBtn = document.getElementById("btn-review-mode");
+      reviewBtn.disabled = wrongCount === 0;
+    }
+
+    // =========================================================================
+    // 4. タブ切り替え・画面遷移
+    // =========================================================================
+    function switchTab(tab) {
+      const viewQuiz = document.getElementById("view-quiz");
+      const viewSheet = document.getElementById("view-sheet");
+      const btnQuiz = document.getElementById("nav-quiz-btn");
+      const btnSheet = document.getElementById("nav-sheet-btn");
+
+      if (tab === "quiz") {
+        viewQuiz.classList.remove("hidden");
+        viewSheet.classList.add("hidden");
+        btnQuiz.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold bg-blue-600 text-white shadow transition";
+        btnSheet.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold text-slate-300 hover:text-white transition";
+      } else {
+        viewQuiz.classList.add("hidden");
+        viewSheet.classList.remove("hidden");
+        btnSheet.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold bg-red-600 text-white shadow transition";
+        btnQuiz.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold text-slate-300 hover:text-white transition";
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function goHome() {
+      switchTab("quiz");
+      document.getElementById("quiz-home").classList.remove("hidden");
+      document.getElementById("quiz-play").classList.add("hidden");
+      document.getElementById("quiz-result").classList.add("hidden");
+      updateHomeStats();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // =========================================================================
+    // 5. クイズ開始・出題ロジック
+    // =========================================================================
+    function shuffleArray(array) {
+      const arr = [...array];
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function startQuiz(mode, param) {
+      let targetQuestions = [];
+      let title = "";
+
+      if (mode === "sequential") {
+        targetQuestions = [...QUESTIONS];
+        title = "全50問 順番に出題";
+      } else if (mode === "random") {
+        targetQuestions = shuffleArray(QUESTIONS).slice(0, param);
+        title = `ランダム出題（${param}問）`;
+      } else if (mode === "unit") {
+        targetQuestions = QUESTIONS.filter(q => q.unit === param);
+        title = `単元${param} 集中演習`;
+      } else if (mode === "review") {
+        targetQuestions = QUESTIONS.filter(q => userProgress.wrongIds.includes(q.id));
+        if (targetQuestions.length === 0) return;
+        title = `弱点復習モード（${targetQuestions.length}問）`;
+      }
+
+      currentSession = {
+        modeTitle: title,
+        questions: targetQuestions,
+        currentIndex: 0,
+        score: 0,
+        history: []
+      };
+
+      document.getElementById("quiz-home").classList.add("hidden");
+      document.getElementById("quiz-result").classList.add("hidden");
+      document.getElementById("quiz-play").classList.remove("hidden");
+
+      document.getElementById("quiz-mode-label").textContent = title;
+      document.getElementById("q-total-num").textContent = targetQuestions.length;
+
+      renderCurrentQuestion();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function renderCurrentQuestion() {
+      const qObj = currentSession.questions[currentSession.currentIndex];
+      const total = currentSession.questions.length;
+      const currentNum = currentSession.currentIndex + 1;
+
+      // 進捗バー更新
+      document.getElementById("q-current-num").textContent = currentNum;
+      const percent = Math.round((currentNum / total) * 100);
+      document.getElementById("quiz-progress-bar").style.width = `${percent}%`;
+
+      // バッジと問題文
+      document.getElementById("q-unit-badge").textContent = qObj.unitName;
+      document.getElementById("q-page-badge").textContent = `教科書 ${qObj.page}`;
+      document.getElementById("q-type-badge").textContent = qObj.type;
+      document.getElementById("q-text").textContent = `Q${qObj.id}. ${qObj.question}`;
+
+      // 選択肢をシャッフルして描画（元の正解インデックスを追跡）
+      const indexedOptions = qObj.options.map((text, idx) => ({
+        text,
+        isCorrect: idx === qObj.answer
+      }));
+      const shuffledOptions = shuffleArray(indexedOptions);
+
+      const optionsContainer = document.getElementById("q-options");
+      optionsContainer.innerHTML = "";
+      const labels = ["ア", "イ", "ウ", "エ"];
+
+      shuffledOptions.forEach((opt, i) => {
+        const btn = document.createElement("button");
+        btn.className = "option-btn w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-blue-500 hover:bg-blue-50/40 bg-white flex items-start gap-3 font-bold text-slate-800 shadow-2xs";
+        btn.dataset.isCorrect = opt.isCorrect ? "true" : "false";
+        btn.innerHTML = `
+          <span class="w-7 h-7 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center text-sm font-black shrink-0 mt-0.5 border border-slate-300">${labels[i]}</span>
+          <span class="text-sm sm:text-base leading-snug pt-0.5">${opt.text}</span>
+        `;
+        btn.onclick = () => handleAnswer(btn, opt.isCorrect, opt.text, shuffledOptions);
+        optionsContainer.appendChild(btn);
+      });
+
+      // フィードバック欄を隠す
+      document.getElementById("q-feedback").classList.add("hidden");
+    }
+
+    function handleAnswer(selectedBtn, isCorrect, selectedText, shuffledOptions) {
+      const qObj = currentSession.questions[currentSession.currentIndex];
+      const allBtns = document.querySelectorAll("#q-options button");
+
+      // 全ボタンを無効化し、正解・不正解の色付け
+      allBtns.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.remove("hover:border-blue-500", "hover:bg-blue-50/40");
+        const correctFlag = btn.dataset.isCorrect === "true";
+
+        if (correctFlag) {
+          btn.classList.remove("border-slate-200", "bg-white");
+          btn.classList.add("border-emerald-500", "bg-emerald-50", "text-emerald-950");
+          btn.querySelector("span:first-child").className = "w-7 h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center text-sm font-black shrink-0 mt-0.5";
+        } else if (btn === selectedBtn && !isCorrect) {
+          btn.classList.remove("border-slate-200", "bg-white");
+          btn.classList.add("border-rose-500", "bg-rose-50", "text-rose-950");
+          btn.querySelector("span:first-child").className = "w-7 h-7 rounded-lg bg-rose-500 text-white flex items-center justify-center text-sm font-black shrink-0 mt-0.5";
+        } else {
+          btn.classList.add("opacity-50");
+        }
+      });
+
+      // 成績・履歴更新
+      if (isCorrect) {
+        currentSession.score++;
+        if (!userProgress.clearedIds.includes(qObj.id)) {
+          userProgress.clearedIds.push(qObj.id);
+        }
+        // 復習リストから削除
+        userProgress.wrongIds = userProgress.wrongIds.filter(id => id !== qObj.id);
+      } else {
+        if (!userProgress.wrongIds.includes(qObj.id)) {
+          userProgress.wrongIds.push(qObj.id);
+        }
+      }
+      saveProgress();
+
+      currentSession.history.push({
+        questionObj: qObj,
+        selectedText: selectedText,
+        correctText: qObj.options[qObj.answer],
+        isCorrect: isCorrect
+      });
+
+      // フィードバック表示
+      const feedbackBox = document.getElementById("q-feedback");
+      const iconBox = document.getElementById("feedback-icon");
+      const titleEl = document.getElementById("feedback-title");
+      const subEl = document.getElementById("feedback-subtitle");
+
+      feedbackBox.classList.remove("hidden", "bg-emerald-50/90", "border-emerald-400", "bg-rose-50/90", "border-rose-400");
+
+      if (isCorrect) {
+        feedbackBox.classList.add("bg-emerald-50/90", "border-emerald-400");
+        iconBox.className = "w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center text-white text-xl font-bold shrink-0";
+        iconBox.innerHTML = '<i class="fa-solid fa-check"></i>';
+        titleEl.textContent = "正解！";
+        titleEl.className = "text-lg sm:text-xl font-black text-emerald-800";
+        subEl.textContent = "その調子！教科書の重要ポイントを押さえられています。";
+        subEl.className = "text-xs font-bold text-emerald-700";
+      } else {
+        feedbackBox.classList.add("bg-rose-50/90", "border-rose-400");
+        iconBox.className = "w-10 h-10 rounded-full bg-rose-500 flex items-center justify-center text-white text-xl font-bold shrink-0";
+        iconBox.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        titleEl.textContent = "不正解…（復習リストに登録しました）";
+        titleEl.className = "text-lg sm:text-xl font-black text-rose-800";
+        subEl.textContent = `正解は「${qObj.options[qObj.answer]}」です。`;
+        subEl.className = "text-xs font-bold text-rose-700";
+      }
+
+      document.getElementById("feedback-explanation").textContent = qObj.explanation;
+
+      const nextBtn = document.getElementById("btn-next-question");
+      if (currentSession.currentIndex + 1 >= currentSession.questions.length) {
+        nextBtn.innerHTML = '<span>結果を見る</span> <i class="fa-solid fa-flag-checkered"></i>';
+      } else {
+        nextBtn.innerHTML = '<span>次の問題へ</span> <i class="fa-solid fa-arrow-right"></i>';
+      }
+
+      // スマホでも解説が見やすいよう少しスクロール
+      setTimeout(() => {
+        feedbackBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 100);
+    }
+
+    function nextQuestion() {
+      currentSession.currentIndex++;
+      if (currentSession.currentIndex < currentSession.questions.length) {
+        renderCurrentQuestion();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        showResult();
+      }
+    }
+
+    function showResult() {
+      document.getElementById("quiz-play").classList.add("hidden");
+      document.getElementById("quiz-result").classList.remove("hidden");
+
+      const total = currentSession.questions.length;
+      const score = currentSession.score;
+      const percent = Math.round((score / total) * 100);
+
+      document.getElementById("result-mode-name").textContent = currentSession.modeTitle;
+      document.getElementById("result-score").textContent = score;
+      document.getElementById("result-total").textContent = total;
+      document.getElementById("result-percent").textContent = percent;
+
+      let msg = "";
+      if (percent === 100) {
+        msg = "パーフェクト達成！定期考査でも満点が狙える完璧な仕上がりです！";
+      } else if (percent >= 80) {
+        msg = "素晴らしい成績です！間違えた数問を復習すれば完璧になります。";
+      } else if (percent >= 60) {
+        msg = "合格ライン到達！公式の単位換算（分→秒、kW→Wなど）を再確認しよう。";
+      } else {
+        msg = "まずは「赤シート暗記」タブで赤線と公式を確認してから再挑戦しよう！";
+      }
+      document.getElementById("result-message").textContent = msg;
+
+      // 復習ボタンの表示制御
+      const retryBtn = document.getElementById("btn-result-retry-wrong");
+      if (userProgress.wrongIds.length > 0) {
+        retryBtn.classList.remove("hidden");
+      } else {
+        retryBtn.classList.add("hidden");
+      }
+
+      // 解答ふりかえりリスト生成
+      const listContainer = document.getElementById("result-review-list");
+      listContainer.innerHTML = "";
+      currentSession.history.forEach(item => {
+        const div = document.createElement("div");
+        div.className = `p-3.5 rounded-xl border ${item.isCorrect ? "bg-emerald-50/50 border-emerald-200" : "bg-rose-50/60 border-rose-200"}`;
+        div.innerHTML = `
+          <div class="flex items-start gap-2.5">
+            <span class="px-2 py-0.5 rounded text-xs font-black text-white shrink-0 mt-0.5 ${item.isCorrect ? "bg-emerald-500" : "bg-rose-500"}">
+              ${item.isCorrect ? "正解" : "不正解"}
+            </span>
+            <div class="text-xs sm:text-sm">
+              <div class="font-bold text-slate-800">Q${item.questionObj.id}. ${item.questionObj.question}</div>
+              <div class="mt-1 text-slate-600">
+                <span class="font-bold text-emerald-700">正答：${item.correctText}</span>
+                ${!item.isCorrect ? `<span class="ml-2 text-rose-600">（あなたの解答：${item.selectedText}）</span>` : ""}
+              </div>
+            </div>
+          </div>
+        `;
+        listContainer.appendChild(div);
+      });
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // =========================================================================
+    // 6. 赤シート暗記機能
+    // =========================================================================
+    function renderMemorizationSheet() {
+      const container = document.getElementById("memorization-container");
+      container.innerHTML = "";
+
+      MEMORIZATION_DATA.forEach(section => {
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-2xl p-5 shadow-sm border border-slate-200";
+        const listHtml = section.items.map(item => `
+          <li class="flex items-start gap-2.5 py-2 border-b border-slate-100 last:border-none leading-relaxed text-sm sm:text-base text-slate-800">
+            <i class="fa-solid fa-square-check text-red-500 mt-1.5 text-xs shrink-0"></i>
+            <div>${item}</div>
+          </li>
+        `).join("");
+
+        card.innerHTML = `
+          <h3 class="text-base sm:text-lg font-extrabold text-blue-900 bg-blue-50/80 px-3.5 py-2 rounded-xl border border-blue-100 mb-3">
+            ${section.unitTitle}
+          </h3>
+          <ul>${listHtml}</ul>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function toggleRedSheet() {
+      isRedSheetOn = !isRedSheetOn;
+      const container = document.getElementById("memorization-container");
+      const btn = document.getElementById("toggle-red-sheet-btn");
+      const text = document.getElementById("toggle-red-sheet-text");
+      const words = document.querySelectorAll(".red-sheet-word");
+
+      if (isRedSheetOn) {
+        container.classList.add("red-sheet-active");
+        words.forEach(w => w.classList.add("masked"));
+        btn.className = "w-full sm:w-auto py-2.5 px-4 rounded-xl font-bold text-sm shadow transition flex items-center justify-center gap-2 bg-red-600 text-white hover:bg-red-700";
+        btn.querySelector("i").className = "fa-solid fa-eye-slash";
+        text.textContent = "赤シートで隠す（ON）";
+      } else {
+        container.classList.remove("red-sheet-active");
+        words.forEach(w => w.classList.remove("masked"));
+        btn.className = "w-full sm:w-auto py-2.5 px-4 rounded-xl font-bold text-sm shadow transition flex items-center justify-center gap-2 bg-slate-700 text-white hover:bg-slate-800";
+        btn.querySelector("i").className = "fa-solid fa-eye";
+        text.textContent = "すべて表示する（OFF）";
+      }
+    }
+
+    function toggleWord(el) {
+      if (!isRedSheetOn) return;
+      el.classList.toggle("masked");
+    }
+
+    // =========================================================================
+    // 7. カスタムモーダル（確認ダイアログ）
+    // =========================================================================
+    function openModal(title, desc, onConfirm) {
+      document.getElementById("modal-title").textContent = title;
+      document.getElementById("modal-desc").textContent = desc;
+      const confirmBtn = document.getElementById("modal-confirm-btn");
+      confirmBtn.onclick = () => {
+        closeModal();
+        onConfirm();
+      };
+      document.getElementById("custom-modal").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("custom-modal").classList.add("hidden");
+    }
+
+    function confirmQuitQuiz() {
+      openModal(
+        "演習を中断しますか？",
+        "現在のクイズを終了してモード選択画面に戻ります（ここまでの解答履歴は保存されています）。",
+        () => goHome()
+      );
+    }
+
+    function resetProgress() {
+      openModal(
+        "学習履歴をリセットしますか？",
+        "クリア済の問題数や復習リストがすべて初期状態に戻ります。",
+        () => {
+          userProgress = { clearedIds: [], wrongIds: [] };
+          saveProgress();
+          updateHomeStats();
+        }
+      );
+    }
+
+    // =========================================================================
+    // 8. 単一HTMLファイルとしてローカル保存（オフライン利用向け）
+    // =========================================================================
+    function downloadStandaloneHtml() {
+      try {
+        const docClone = document.documentElement.cloneNode(true);
+        const modalEl = docClone.querySelector("#custom-modal");
+        if (modalEl) modalEl.classList.add("hidden");
+
+        const htmlContent = "<!DOCTYPE html>\n" + docClone.outerHTML;
+        const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "denki_kiso_quiz_50.html";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      } catch (e) {
+        console.error("ダウンロードエラー:", e);
+      }
+    }
+  </script>
+
+</body></html>
